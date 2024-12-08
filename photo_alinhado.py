@@ -18,13 +18,13 @@ input_directory = "/net/ASTRO/ricardomarzall/Documentos/Tecnicas_observacionais/
 # Número de estrelas de comparação (modifique este valor conforme necessário)
 num_stars = 5  # Altere para o número desejado de estrelas
 
+
+# Listar arquivos FITS
+data_files = glob.glob(os.path.join(input_directory, "*alinhada*fits")) # pode alterar conforme o nome dos arquivos
+data_files.sort()
 #####################################################################################################
 
 # Não precisa necessariamente Alterar
-
-# Listar arquivos FITS
-data_files = glob.glob(os.path.join(input_directory, "*alinhada*fits"))
-data_files.sort()
 
 # Arquivo de log
 log_file = os.path.join(input_directory, "process_log.txt")
